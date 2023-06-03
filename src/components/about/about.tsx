@@ -19,15 +19,9 @@ const About = () => {
           oftast bara tog upp den bärandes mående och det stod ofta väldigt lite
           information om föräldraskapet som förälder.
         </Text>
-        <Text style={{ marginBottom: '0.5rem' }}>
-          dsdasdasdasdsadasdasdsadasdasdasdasdada
-        </Text>
-        <Text style={{ marginBottom: '0.5rem' }}>
-          dsdasdasdasdsadasdasdsadasdasdasdasdada
-        </Text>
-        <Text style={{ marginBottom: '0.5rem' }}>
-          dsdasdasdasdsadasdasdsadasdasdasdasdada
-        </Text>
+        <Text style={{ marginBottom: '0.5rem' }}>Text 1</Text>
+        <Text style={{ marginBottom: '0.5rem' }}>Text 2</Text>
+        <Text style={{ marginBottom: '0.5rem' }}>Text 3</Text>
       </Box>
       <Box style={{ marginTop: '2rem' }}>
         <Text
@@ -40,16 +34,7 @@ const About = () => {
         >
           Sammanfattning:
         </Text>
-        <Text>
-          Livet efter graviditeten är en spännande resa för föräldrar. Genom att vara
-          medvetna om och förstå de fysiska, känslomässiga och sociala förändringarna som
-          kan uppstå, kan ni bättre hantera övergången till ert nya liv som föräldrar.
-          Genom att kommunicera öppet, ge varandra stöd och söka rätt hjälp och
-          information kan ni skapa en hälsosam och balanserad tillvaro. Glöm inte att ge
-          er själva tid och vara tålmodiga under denna anpassningsperiod. Varje förälder
-          och familj är unika, och det är viktigt att respektera och stödja varandras resa
-          mot att bli de bästa föräldrarna ni kan vara.
-        </Text>
+        <Text>Ej klar</Text>
       </Box>
     </Card>
   );

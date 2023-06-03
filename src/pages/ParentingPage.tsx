@@ -1,10 +1,11 @@
 import { Container } from '@mantine/core';
-import React from 'react';
+
+import ParentingComponent from '../components/parenting/parentingComponent';
 
 const ParentingPage = () => {
   return (
     <Container size="md" style={{ marginTop: '2rem' }}>
-      <div>ParentingPage</div>
+      <div>Föräldraskapet</div>
     </Container>
   );
 };

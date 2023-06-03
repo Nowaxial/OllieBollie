@@ -1,15 +1,11 @@
-/* eslint-disable react/no-unescaped-entities */
-import { Box, Card, Skeleton, Text, Title } from '@mantine/core';
+/* import { Box, Card, Skeleton, Text, Title } from '@mantine/core';
 
-import CarouselTAKK from '../communication/carouselTAKK';
-import VideoTAKK from '../communication/VideoTAKK';
-
-function parenting() {
+function ParentingComponent() {
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
       <center>
         <Title order={2} align="center" style={{ marginBottom: '1rem' }} fw={700}>
-          Att kommunicera med små barn: En guide för föräldrar
+          Snart
         </Title>
       </center>
       <Skeleton visible={false}>
@@ -29,7 +25,6 @@ function parenting() {
             TAKK-tecken är användbara verktyg för att hjälpa små barn att kommunicera. Här
             är några exempel på tecken:
           </Text>
-          <CarouselTAKK />
         </Box>
 
         <Box style={{ marginTop: '1rem' }}>
@@ -145,7 +140,6 @@ function parenting() {
             <Text variant="h3" style={{ marginTop: '0.5rem' }}>
               Nedanför kommer det 2 videos som visar hur man kan lära små barn TAKK.
             </Text>
-            <VideoTAKK />
           </Box>
         </Box>
       </Skeleton>
@@ -153,4 +147,5 @@ function parenting() {
   );
 }
 
-export default parenting;
+export default ParentingComponent;
+ */
