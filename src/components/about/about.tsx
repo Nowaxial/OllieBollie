@@ -19,12 +19,12 @@ const About = () => {
           oftast bara tog upp den bärandes mående och det stod ofta väldigt lite
           information om föräldraskapet som förälder.
         </Text>
-        <Text style={{ marginBottom: '0.5rem' }}>Text 1</Text>
+        {/* <Text style={{ marginBottom: '0.5rem' }}>Text 1</Text>
         <Text style={{ marginBottom: '0.5rem' }}>Text 2</Text>
-        <Text style={{ marginBottom: '0.5rem' }}>Text 3</Text>
+        <Text style={{ marginBottom: '0.5rem' }}>Text 3</Text> */}
       </Box>
       <Box style={{ marginTop: '2rem' }}>
-        <Text
+        {/*  <Text
           variant="h3"
           style={{ marginBottom: '0.5rem' }}
           fw={500}
@@ -34,7 +34,7 @@ const About = () => {
         >
           Sammanfattning:
         </Text>
-        <Text>Ej klar</Text>
+        <Text>Ej klar</Text> */}
       </Box>
     </Card>
   );
