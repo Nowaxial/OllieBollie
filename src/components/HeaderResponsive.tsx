@@ -19,11 +19,11 @@ import {
   IconVocabulary,
   IconZzz,
 } from '@tabler/icons-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const HEADER_HEIGHT = rem(20);
+const HEADER_HEIGHT = rem(40);
 
 const links = [
   { link: '/', label: 'Hem', icon: IconHome },
@@ -38,6 +38,21 @@ const HeaderResponsive = () => {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const navigate = useNavigate();
 
   const handleLinkClick = (event, link) => {
@@ -71,7 +86,9 @@ const HeaderResponsive = () => {
               size="lg"
             />
           </div>
-          <Center>
+          <Center
+            style={{ backgroundColor: scrollPosition > 0 ? '#D3D3D3' : 'transparent' }}
+          >
             <Group className={classes.links}>{items}</Group>
           </Center>
           <Transition transition="pop-top-right" duration={200} mounted={opened}>
@@ -91,13 +108,16 @@ export default React.memo(HeaderResponsive);
 
 const useStyles = createStyles((theme) => ({
   root: {
-    position: 'relative',
+    position: 'sticky',
     zIndex: 1,
   },
 
   icon: {
     marginRight: theme.spacing.xs,
     verticalAlign: 'middle',
+  },
+  sticky: {
+    position: 'sticky',
   },
 
   dropdown: {
@@ -157,7 +177,7 @@ const useStyles = createStyles((theme) => ({
 
     '&:hover': {
       /* color: theme.colorScheme === 'dark' ? theme.white : theme.black, */
-      color: theme.colors.yellow,
+      color: theme.colors.indigo,
       textDecoration: 'none',
     },
 
